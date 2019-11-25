@@ -1,0 +1,102 @@
+.grid-container {
+  display: grid;
+  height: 120px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 25px;
+  background-color: lightblue;
+  padding: 10px;
+  text-align: center;
+}
+.box {
+  display: grid;
+  height: 160px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 10px;
+  background-color: RoyalBlue;
+  padding: 4px;
+  text-align: center;
+}
+nav {
+  height: 100px;
+}
+body {
+  background: SteelBlue;
+  font-family: Kanit;
+  font-size: 22px;
+  color: Black;
+ }
+h1 {
+  text-align: center;
+  color: blue;
+  height: 100px;
+}
+h2 {
+  color: MediumBlue;
+  font-family: Exo;
+}
+a:link {
+  color: Black;
+  margin-left: 5px;
+}
+a:visited {
+  color: powderblue;
+}
+a:hover {
+  color: Midnightblue;
+}
+a:active {
+  color: CornflowerBlue;
+}
+.sonic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.white-border {
+  border: 1px white;
+  box-sizing: border-box;
+  color: white;
+}
+.child {
+  font-size: 2em;
+  padding: 10px;
+  text-align: center;
+}
+.powderblue-background {
+  background: powderblue;
+}
+img {
+  border: 3px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 200px;
+  height:150px;
+  margin-right: 10px;
+}
+.vb {
+  border: 3px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 250px;
+  height:150px;
+}
+.border {
+  border: 10px solid #000099;
+  border-radius: 4px;
+  padding: 5px;
+}
+.shrug {
+  border: 3px solid #ddd;
+  padding: 5px;
+  width: 200px;
+  height:200px;
+}
