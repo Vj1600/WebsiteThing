@@ -1,6 +1,6 @@
-.grid-container {
-  display: grid;
-  height: 120px;
+.flex-container {
+  display: flex;
+  height: 230px;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
   grid-gap: 25px;
@@ -8,22 +8,99 @@
   padding: 10px;
   text-align: center;
 }
-.box {
+.p1 {
+  width: 800px;
+  overflow: hidden;
+  white-space: inherit;
+  text-overflow: ellipsis;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+}
+.p2 {
+  width: 800px;
+  overflow: hidden;
+  white-space: inherit;
+  text-overflow: ellipsis;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+}
+.p3 {
+  width: 800px;
+  overflow: hidden;
+  white-space: inherit;
+  text-overflow: ellipsis;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+}
+.p4 {
+  width: 700px;
+  overflow: hidden;
+  white-space: inherit;
+  text-overflow: ellipsis;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+}
+.p5 {
+  width: 720px;
+  overflow: hidden;
+  white-space: inherit;
+  text-overflow: ellipsis;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+}
+.one {
+  display: flex;
+  height: 120px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 25px;
+  background-color: lightblue;
+  padding: 10px;
+  text-align: center;
+  border: 10px solid #000099;
+  border-radius: 6px;
+  padding: 4px;
   display: grid;
-  height: 160px;
+  height: 200px;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-  grid-gap: 10px;
+  grid-gap: 5px;
+  padding: 4px;
+  text-align: center;
+}
+.pages {
+  display: grid;
+  height: 180px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 5px;
   background-color: RoyalBlue;
   padding: 4px;
   text-align: center;
+  border: 10px solid #000099;
+  border-radius: 6px;
+  padding: 4px;
+}
+li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+li a:hover {
+    background-color: Midnightblue;
+    color: white;
 }
 nav {
   height: 100px;
 }
 body {
   background: SteelBlue;
-  font-family: Kanit;
+  font-family: Tahoma;
   font-size: 22px;
   color: Black;
  }
@@ -34,7 +111,7 @@ h1 {
 }
 h2 {
   color: MediumBlue;
-  font-family: Exo;
+
 }
 a:link {
   color: Black;
@@ -42,12 +119,6 @@ a:link {
 }
 a:visited {
   color: powderblue;
-}
-a:hover {
-  color: Midnightblue;
-}
-a:active {
-  color: CornflowerBlue;
 }
 .sonic {
   display: block;
@@ -75,28 +146,75 @@ ul {
   background: powderblue;
 }
 img {
-  border: 3px solid #ddd;
-  border-radius: 4px;
+  border: 5px solid white;
+  border-radius: 5px;
   padding: 5px;
   width: 200px;
   height:150px;
-  margin-right: 10px;
+  display: block;
+  margin: 0 auto;
 }
 .vb {
   border: 3px solid #ddd;
   border-radius: 4px;
   padding: 5px;
   width: 250px;
-  height:150px;
+  height: 150px;
 }
 .border {
   border: 10px solid #000099;
-  border-radius: 4px;
-  padding: 5px;
+  border-radius: 6px;
+  padding: 4px;
 }
 .shrug {
   border: 3px solid #ddd;
   padding: 5px;
   width: 200px;
-  height:200px;
+  height: 200px;
 }
+.float {
+  float: left;
+  margin: 0;
+}
+.right {
+  float: right;
+}
+.grid-container {
+  display: flex;
+  height: 200px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px;
+  grid-gap: 25px;
+  background-color: lightblue;
+  padding: 10px;
+}
+.blank {
+grid-gap: 10px;
+}
+.up {
+  grid-area: up;
+}
+.content {
+  grid-area: ct;
+}
+.footer {
+  grid-area: ft;
+}
+.wrapper {
+  display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: (50px, auto);
+      grid-template-areas: "up up up"
+                           "ct ct ct"
+                           "ft ft ft"
+}
+/* Extra small devices (phones, less than 768px) */
+
+/* Small devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px)
+
+/* Medium devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px)
+
+/* Large devices (large desktops, 1200px and up) */
+@media only screen and (min-width: 1200px)
